@@ -4,11 +4,40 @@
     src: url(https://example.com/material-symbols.woff) format('woff');
 }
 
+body {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 2em;
+}
+
+.card .card-title {
+    font-size: 18px;
+}
+
+.card .card-text {
+    font-size: 15px;
+}
+
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;
+    font-size: 48px;
     /* Preferred icon size */
     display: inline-block;
     line-height: 1;
@@ -18,10 +47,74 @@
     white-space: nowrap;
     direction: ltr;
     font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
+        'FILL' 0,
+        'wght' 200,
         'GRAD' 0,
-        'opsz' 500;
-    font-size: 3em;
+        'opsz' 30;
+    color: gray;
+}
 
+#main-account-circle {
+    font-size: 5em;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 30;
+}
+
+.card-body .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 900,
+        'GRAD' 0,
+        'opsz' 40;
+    font-size: 1em;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+#shops img,
+#recentpurchases img {
+    width: 100px;
+    /* 원하는 이미지 크기 */
+    height: 100px;
+    /* 이미지의 높이와 너비를 동일하게 설정 */
+
+    /* 이미지를 컨테이너에 맞게 잘라냄 */
+    border: 2px solid gray;
+    /* 선택적으로 테두리 추가 */
+    display: block;
+}
+
+.overflow-x-auto {
+    white-space: nowrap;
+}
+
+#shops .overflow-x-auto div,
+#shops .overflow-x-auto img,
+#recentpurchases .overflow-x-auto div,
+#recentpurchases .overflow-x-auto img {
+    display: inline-block;
+}
+
+#shops .overflow-x-auto span,
+#recentpurchases .overflow-x-auto span {
+    display: block;
+}
+
+#shops,
+#storeslocation,
+#recentpurchases {
+    padding-bottom: 10px;
+}
+
+#storeslocation .card-text {
+    white-space: wrap;
+}
+
+#storeslocation .card {
+    display: inline-block;
 }
