@@ -1,20 +1,27 @@
-@font-face {
-    font-family: 'Material Symbols Outlined';
-    font-style: normal;
-    src: url(https://example.com/material-symbols.woff) format('woff');
-}
-
 body {
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
+    /* 기본적으로 전체 화면 너비 사용 */
+    max-width: 576px;
+    /* 최대 폭을 576px로 고정 */
+    margin: 0 auto;
+    /* 화면 중앙 정렬 */
 }
 
+.title {
+    margin: 30px 0;
+}
 
-h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
+.subtitle {
+    margin: 10px 10px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 h2 {
@@ -76,8 +83,8 @@ h2 {
     padding: 10px;
 }
 
-#shops img,
-#recentpurchases img {
+
+.circle-img {
     width: 100px;
     /* 원하는 이미지 크기 */
     height: 100px;
@@ -86,7 +93,8 @@ h2 {
     /* 이미지를 컨테이너에 맞게 잘라냄 */
     border: 2px solid gray;
     /* 선택적으로 테두리 추가 */
-    display: block;
+
+
 }
 
 .overflow-x-auto {
@@ -117,4 +125,18 @@ h2 {
 
 #storeslocation .card {
     display: inline-block;
+}
+
+.active {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 30;
+    color: black;
+    transform: translateY(-3px);
+}
+
+.navbar span {
+    transition: transform 0.5s ease, color 0.5s ease, font-variation-settings 0.5s ease;
 }
