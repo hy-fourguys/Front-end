@@ -8,6 +8,7 @@ body {
     max-width: 576px;
     /* 최대 폭을 576px로 고정 */
     margin: 0 auto;
+    padding-bottom: 65px; /* 고정된 네비게이션 바의 높이 */
     /* 화면 중앙 정렬 */
 }
 
